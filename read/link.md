@@ -16,6 +16,12 @@ has_children: true
 
 * manjaro 探索筆記 / [picom](https://samwhelp.github.io/note-about-manjaro/read/adjustment/tool/picom.html)
 
+
+## Reddit
+
+* [[Hypr] Comfortable, homemade WM.](https://www.reddit.com/r/unixporn/comments/r5xh7g/hypr_comfortable_homemade_wm/)
+* [[Hypr] Jumping into hyprspace](https://www.reddit.com/r/unixporn/comments/rnvmgd/hypr_jumping_into_hyprspace/)
+
 ## Just the Docs
 
 * [Just the Docs](https://pmarsceill.github.io/just-the-docs/) ([GitHub](https://github.com/pmarsceill/just-the-docs))
