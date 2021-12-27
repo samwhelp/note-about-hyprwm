@@ -1,2 +1,2 @@
 
-# hyprwm / Keybind
+# Hyprwm / Keybind
