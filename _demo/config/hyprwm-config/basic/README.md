@@ -1,5 +1,10 @@
 
 
+## Spec
+
+* [Keybind](spec-keybind.md)
+
+
 ## Link
 
 * Hypr / issues / [#28 Missing documentation?](https://github.com/vaxerski/Hypr/issues/28)
