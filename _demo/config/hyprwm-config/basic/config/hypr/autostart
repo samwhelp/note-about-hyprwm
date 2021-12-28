@@ -56,9 +56,9 @@ mod_background_color () {
 ##
 
 mod_wallpaper () {
-	#feh --bg-tile ~/Pictures/wall/gruv.png &
+	#feh feh --bg-fill ~/Pictures/Wallpaper/default.jpg
 
-	local default_wallpaper='/usr/share/backgrounds/forest.jpg'
+	local default_wallpaper="$HOME/Pictures/Wallpaper/default.jpg"
 
 	if [ -f "$HOME/.fehbg" ]; then
 		if [ -x "$HOME/.fehbg" ]; then

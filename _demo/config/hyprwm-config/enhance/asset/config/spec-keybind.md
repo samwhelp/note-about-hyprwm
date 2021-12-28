@@ -7,6 +7,7 @@
 * [Launch Terminal](#launch-terminal)
 * [Launch Rofi](#launch-rofi)
 * [Launch App](#launch-app)
+* [Wallpaper](#wallpaper)
 * [Screenshot](#screenshot)
 * [Volume Control](#volume-control)
 
@@ -36,6 +37,14 @@
 | `Alt + Shift + g` | Launch File Manager | `thunar`     |
 | `Alt + Shift + e` | Launch Text Editor  | `mousepad`   |
 | `Alt + Shift + b` | Launch Web Browser  | `firefox`    |
+
+
+## Wallpaper
+
+| Keybind          | Action            | Command                       |
+| ---------------- | ----------------- | ----------------------------- |
+| `Alt + w`        | Wallpaper Shuf    | `hypr-wallpaper-ctrl-shuf`    |
+| `Alt + Ctrl + w` | Wallpaper Default | `hypr-wallpaper-ctrl-default` |
 
 
 ## Screenshot

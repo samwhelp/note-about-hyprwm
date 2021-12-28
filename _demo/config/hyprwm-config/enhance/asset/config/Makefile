@@ -19,7 +19,7 @@ help:
 .PHONY: help
 
 
-install: autostart-install config-install picom-install
+install: autostart-install config-install compositor-install wallpaper-install
 #	tree --dirsfirst ~/.config/hypr
 .PHONY: install
 
@@ -32,14 +32,17 @@ config-install:
 	install -Dm644 ./hypr/hypr.conf ~/.config/hypr/hypr.conf
 .PHONY: config-install
 
-picom-install:
+compositor-install:
 	install -Dm644 ./hypr/style/picom/picom.conf ~/.config/hypr/style/picom/picom.conf
-.PHONY: picom-install
+.PHONY: compositor-install
+
+wallpaper-install:
+	install -Dm755 ./hypr/bin/hypr-wallpaper-ctrl-shuf ~/.config/hypr/bin/hypr-wallpaper-ctrl-shuf
+	install -Dm755 ./hypr/bin/hypr-wallpaper-ctrl-default ~/.config/hypr/bin/hypr-wallpaper-ctrl-default
+.PHONY: wallpaper-install
 
 
-
-
-remove: autostart-remove config-remove picom-remove
+remove: autostart-remove config-remove compositor-remove wallpaper-remove
 #	tree --dirsfirst ~/.config/hypr
 .PHONY: remove
 
@@ -52,9 +55,14 @@ config-remove:
 	rm -f ~/.config/hypr/hypr.conf
 .PHONY: config-remove
 
-picom-remove:
+compositor-remove:
 	rm -f  ~/.config/hypr/style/picom/picom.conf
-.PHONY: picom-remove
+.PHONY: compositor-remove
+
+wallpaper-remove:
+	rm -f  ~/.config/hypr/bin/hypr-wallpaper-ctrl-shuf
+	rm -f  ~/.config/hypr/bin/hypr-wallpaper-ctrl-default
+.PHONY: wallpaper-remove
 
 
 

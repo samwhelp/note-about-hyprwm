@@ -29,6 +29,9 @@ show
 
 ```
 /home/user/.config/hypr
+├── bin
+│   ├── hypr-wallpaper-ctrl-default
+│   └── hypr-wallpaper-ctrl-shuf
 ├── style
 │   └── picom
 │       └── picom.conf
@@ -36,7 +39,7 @@ show
 ├── environment
 └── hypr.conf
 
-2 directories, 4 files
+3 directories, 6 files
 ```
 
 ## Howto
