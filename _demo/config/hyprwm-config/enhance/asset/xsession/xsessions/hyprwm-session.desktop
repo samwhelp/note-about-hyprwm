@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Be Hypr
+Comment=Be Hypr
+Exec=/usr/share/hyprwm/xsessions/hyprwm-session
+Icon=dwm
+Type=XSession
