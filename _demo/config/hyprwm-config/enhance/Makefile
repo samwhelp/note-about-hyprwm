@@ -11,9 +11,9 @@ help:
 	@echo
 	@echo '	$$ make clone'
 	@echo
-	@echo '	$$ make prepare_arch_build'
+	@echo '	$$ make prepare-arch-build'
 	@echo
-	@echo '	$$ make prepare_ubuntu_build'
+	@echo '	$$ make prepare-ubuntu-build'
 	@echo
 	@echo '	$$ make build'
 	@echo
@@ -25,10 +25,10 @@ help:
 .PHONY: help
 
 
-install: hyprwm_install xsession_install config_install
+install: hyprwm-install xsession-install config-install
 .PHONY: install
 
-remove: hyprwm_remove xsession_remove config_remove
+remove: hyprwm-remove xsession-remove config-remove
 .PHONY: remove
 
 
@@ -38,13 +38,13 @@ remove: hyprwm_remove xsession_remove config_remove
 ## * https://github.com/vaxerski/Hypr/wiki/Building
 ##
 
-prepare_arch_build:
+prepare-arch-build:
 	sudo pacman -S --needed cairo gdb ninja gcc cmake libxcb xcb-proto xcb-util xcb-util-cursor xcb-util-keysyms xcb-util-wm gtkmm gtk4 gtkmm3
-.PHONY: prepare_arch_build
+.PHONY: prepare-arch-build
 
-prepare_ubuntu_build:
+prepare-ubuntu-build:
 	sudo apt-get install xcb cmake gcc libgtk-3-dev ninja-build libgtkmm-3.0-dev libxcb-randr0 libxcb-randr0-dev libxcb-util-dev libxcb-util0-dev libxcb-util1 libxcb-ewmh-dev libxcb-xinerama0 libxcb-xinerama0-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-cursor-dev libxcb-shape0-dev build-essential
-.PHONY: prepare_ubuntu_build
+.PHONY: prepare-ubuntu-build
 
 clone:
 	git clone https://github.com/vaxerski/Hypr.git src/hyprwm
@@ -55,36 +55,36 @@ build:
 	make -C src/hyprwm release
 .PHONY: build
 
-#hyprwm_install: build
-hyprwm_install:
+#hyprwm-install: build
+hyprwm-install:
 	sudo install -Dm755 ./src/hyprwm/build/Hypr /usr/bin/Hypr
 #	sudo install -Dm755 ./src/hyprwm/build/Hypr /usr/local/bin/Hypr
-.PHONY: hyprwm_install
+.PHONY: hyprwm-install
 
 
-hyprwm_remove:
+hyprwm-remove:
 	sudo rm -f /usr/bin/Hypr
 #	sudo rm -f /usr/local/bin/Hypr
-.PHONY: hyprwm_remove
+.PHONY: hyprwm-remove
 
 
 
 
-xsession_install:
+xsession-install:
 	make -C ./asset/xsession install
-.PHONY: xsession_install
+.PHONY: xsession-install
 
-xsession_remove:
+xsession-remove:
 	make -C ./asset/xsession remove
-.PHONY: xsession_remove
+.PHONY: xsession-remove
 
 
 
 
-config_install:
+config-install:
 	make -C ./asset/config install
-.PHONY: config_install
+.PHONY: config-install
 
-config_remove:
+config-remove:
 	make -C ./asset/config remove
-.PHONY: config_remove
+.PHONY: config-remove
