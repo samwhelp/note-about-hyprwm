@@ -57,14 +57,14 @@ build:
 
 #hyprwm-install: build
 hyprwm-install:
-	sudo install -Dm755 ./src/hyprwm/build/Hypr /usr/bin/Hypr
-#	sudo install -Dm755 ./src/hyprwm/build/Hypr /usr/local/bin/Hypr
+#	sudo install -Dm755 ./src/hyprwm/build/Hypr /usr/bin/Hypr
+	sudo install -Dm755 ./src/hyprwm/build/Hypr /usr/local/bin/Hypr
 .PHONY: hyprwm-install
 
 
 hyprwm-remove:
-	sudo rm -f /usr/bin/Hypr
-#	sudo rm -f /usr/local/bin/Hypr
+#	sudo rm -f /usr/bin/Hypr
+	sudo rm -f /usr/local/bin/Hypr
 .PHONY: hyprwm-remove
 
 
