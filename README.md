@@ -45,3 +45,15 @@
 | --- | --- | --- |
 | [wallpaper-select-feh](https://samwhelp.github.io/note-about-fzf/read/project/wallpaper-select/wallpaper-select-feh) | `wallpaper-select-feh fzf` | 設定桌面圖片 |
 | [xfteditor](https://samwhelp.github.io/tool-xfteditor/read/project/xfteditor/) | `xfted file_path` | 輔助「檔案管理器」，右鍵開啟檔案到「xfce-terminal」的「新頁籤(Tab)」 |
+
+
+## 相關筆記
+
+* [System Modeling](https://samwhelp.github.io/system-modeling/) ([GitHub](https://github.com/samwhelp/system-modeling/))
+* [Ezarcher 探索筆記](https://samwhelp.github.io/note-about-ezarcher/) ([GitHub](https://github.com/samwhelp/note-about-ezarcher/))
+* [Hyprland 探索筆記](https://samwhelp.github.io/note-about-hyprland/) ([GitHub](https://github.com/samwhelp/note-about-hyprland/))
+
+
+## samwhelp
+
+* [個人筆記](https://samwhelp.github.io/book/)
